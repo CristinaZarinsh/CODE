@@ -19,14 +19,24 @@ while (index < count)
 Console.WriteLine();
 
 index = 0;
+bool element = false;
 
 while(index < count)
 {
     if (array[index] == find)
     {
-        Console.WriteLine("Такой элемент есть");
+        element = true;
     }
+    
     index += 1;
+}
+if (element)
+{
+    Console.WriteLine("Такой элемент есть");
+}
+else
+{
+    Console.WriteLine("Такого числа нет");
 }
 
 Console.WriteLine("END");
